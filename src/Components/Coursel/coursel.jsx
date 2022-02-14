@@ -34,7 +34,7 @@ export default function Coursel() {
                 setIndex((prevIndex) =>
                     prevIndex === kcm_images.length - 1 ? 0 : prevIndex + 1
                 ),
-            3000
+            5000
         );
         return () => {
             resetTimeout();

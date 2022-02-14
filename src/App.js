@@ -1,9 +1,9 @@
-import Coursel from "./Components/Coursel/coursel";
+import test from "./Pages/test";
 
 export default function App() {
     return (
         <div>
-            <Coursel />
+            <test />
         </div>
     );
 }
