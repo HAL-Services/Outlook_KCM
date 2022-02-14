@@ -67,13 +67,38 @@ label {
   margin-top: 20px;
   cursor: pointer;
   width: 30%;
-  background-color: #0B62FE;
+  background-color: #0b62fe;
   border-radius: 10px;
   padding: 1rem;
   color: white;
   letter-spacing: 1.2px;
   font-weight: 600;
   border: none;
+  transition: all 0.5s;
+}
+.registerButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.registerButton span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.registerButton:hover span {
+  padding-right: 25px;
+}
+
+.registerButton:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 .termsAndCondition {
   color: #353434;
@@ -82,6 +107,10 @@ label {
 }
 
 @media only screen and (max-width: 1030px) {
+  .body,
+  html {
+    overflow-x: hidden;
+  }
   .container {
     justify-content: center;
     align-items: center;

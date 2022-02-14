@@ -23,15 +23,7 @@ export default function Signup() {
                 <input
                   className="registerInput"
                   type="text"
-                  placeholder="username"
-                ></input>
-              </div>
-              <div className="wrapper">
-                <label>Password</label>
-                <input
-                  className="registerInput"
-                  type="password"
-                  placeholder="password"
+                  placeholder="Full Name"
                 ></input>
               </div>
               <div className="wrapper">
@@ -39,7 +31,7 @@ export default function Signup() {
                 <input
                   className="registerInput"
                   type="text"
-                  placeholder="0123456789"
+                  placeholder="1234567890"
                 ></input>
               </div>
               <div className="wrapper">
@@ -54,7 +46,7 @@ export default function Signup() {
                 Creating an account means you're okay with our Terms of Service
                 and our Privacy Policy
               </p>
-              <button className="registerButton" type="submit">Continue</button>
+              <button className="registerButton" type="submit"><span>Continue</span></button>
             </form>
           </div>
         </div>

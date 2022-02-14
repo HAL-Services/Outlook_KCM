@@ -1,0 +1,107 @@
+.FooterContainer {
+  display: flex;
+  width: 100vw;
+  top: 100%;
+  height: 400px;
+  background-color: #2a2726;
+  color: white;
+}
+.FooterLogo {
+  display: flex;
+  margin-top: 20px;
+  width: 50%;
+  flex-direction: column;
+  margin-left: 30px;
+}
+.FooterImgContainer {
+  height: 40%;
+}
+.FooterLogoImg {
+  height: 100%;
+  border-radius: 100%;
+}
+.FooterAddress {
+  letter-spacing: 1.2px;
+  font-weight: 400;
+  width: 70%;
+  margin-top: 10px;
+}
+.FooterSocials {
+  display: flex;
+  width: 70%;
+}
+.FooterIcons {
+  margin-right: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+.FooterIcons:hover {
+  color: #0b62fe;
+}
+
+.FooterInfo {
+  margin-top: 90px;
+  width: 50%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.FooterWrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.FooterIconsWrapper {
+  display: flex;
+  width: 25%;
+}
+
+.FooterText {
+  margin-left: 10px;
+}
+.FooterInfoValue {
+  width: 80%;
+}
+
+@media only screen and (max-width: 1030px) {
+  .body,
+  html {
+    overflow-x: hidden;
+  }
+  .FooterContainer {
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+  }
+  .FooterLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .FooterImgContainer {
+    display: flex;
+    width: 70%;
+    height: 30%;
+    
+  }
+  .FooterLogoImg {
+    height: 90%;
+    margin-top: 7px;
+  }
+
+  .FooterAddress {
+    width: 70%;
+  }
+  .FooterInfo {
+    margin-top: -90px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
