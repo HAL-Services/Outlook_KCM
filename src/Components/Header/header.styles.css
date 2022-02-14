@@ -61,7 +61,44 @@
 .Headericons{
     color:grey;
 }
-
-/* .Headericons:hover{
-    color:blue;
-} */
+@media only screen and (max-width:1030px){
+  .HeadernavContainer{
+    display: flex;
+  }  
+  .Headerhero{
+    width:90%;
+  }
+  .HeaderExtra{
+    display: none!important;
+  }
+  .Headerutilitis{
+    width:25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0px;
+  }
+  .HeadercompanyName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    height:100%;
+    padding:0px;
+  }
+  .Headernav{
+    width:100%;
+    height:100%;
+    padding:0px;
+  }
+  .Headerwrapper{
+    width:100%;
+    height:100%;
+    padding:0px;
+  }
+  .Headernav-items{
+    padding:0px;
+    text-align: center;
+    padding:0px;
+  }
+}

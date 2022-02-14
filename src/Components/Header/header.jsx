@@ -11,15 +11,15 @@ export default function Header() {
       </div>
       <div className="Headerutilitis">
         <ul className="Headernav">
-          <div className="Headerwrapper">
+          <div className="Headerwrapper HeaderExtra">
             <GiScrewdriver className="Headericons" />
             <li className="Headernav-items">Services</li>
           </div>
-          <div className="Headerwrapper">
+          <div className="Headerwrapper HeaderExtra">
             <FaLocationArrow className="Headericons" />
             <li className="Headernav-items">Get Direction</li>
           </div>
-          <div className="Headerwrapper">
+          <div className="Headerwrapper HeaderExtra">
             <FaPhoneAlt className="Headericons" />
             <li className="Headernav-items">Call</li>
           </div>

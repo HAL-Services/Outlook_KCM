@@ -8,7 +8,6 @@ export default function () {
     <div>
       <Header/>
       <Signup/>
-      <Signup/>
       <Footer/>
     </div>
   );

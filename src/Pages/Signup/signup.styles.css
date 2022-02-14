@@ -114,6 +114,8 @@ label {
   .container {
     justify-content: center;
     align-items: center;
+    height: auto;
+    margin-bottom: 20px;
   }
   .left {
     width: 0%;
