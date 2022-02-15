@@ -1,0 +1,156 @@
+body {
+  overflow-x: hidden;
+}
+.Signupcontainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+.Signupleft {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  width: 40%;
+}
+.SignUpImg {
+  width: auto;
+  height: 70%;
+}
+.Signupright {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Signupheading {
+  width: 100%;
+  padding: 2%;
+  margin-top: 5rem;
+  font-weight: 600;
+  color: #504e4e;
+  font-size: 3em;
+  padding-left: 0;
+}
+.Signupmain {
+  width: 80%;
+}
+.Signupregisterform {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.signUpwrapper {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  color: #353434;
+}
+label {
+  margin-bottom: 2px;
+  margin-left: 5px;
+}
+.SignupregisterInput {
+  padding: 10px;
+  width: 35%;
+  background-color: white;
+  border-radius: 0.75rem;
+  border-width: 1px;
+}
+.SignupregisterInput:focus::placeholder {
+  color: transparent;
+}
+.SignupregisterButton {
+  margin-top: 20px;
+  cursor: pointer;
+  width: 30%;
+  background-color: #0b62fe;
+  border-radius: 10px;
+  padding: 1rem;
+  color: white;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  border: none;
+  transition: all 0.5s;
+}
+.SignupregisterButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.SignupregisterButton span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.SignupregisterButton:hover span {
+  padding-right: 25px;
+}
+
+.SignupregisterButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.SignuptermsAndCondition {
+  color: #353434;
+  padding: 0.5rem;
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 1030px) {
+  .body,
+  html {
+    overflow-x: hidden;
+  }
+  .Signupcontainer {
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .Signupleft {
+    width: 0%;
+  }
+  .Signupright {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .Signupheading {
+    padding: 5%;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 3.6rem;
+  }
+  .Signupregisterform {
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+  }
+  .SignUpImg {
+    display: none;
+  }
+  .SignupregisterInput {
+    width: 65%;
+  }
+  .SignupregisterButton {
+    width: 70%;
+  }
+  .SignuptermsAndCondition {
+    line-height: 1.3;
+  }
+  .SignuptopRightImg {
+    display: block !important;
+    position: absolute;
+    right: 0px;
+  }
+}
