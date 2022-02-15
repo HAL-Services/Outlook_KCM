@@ -1,7 +1,11 @@
+import Cards from "./Cards/Cards";
+
 function test() {
-  return (
-    <div>test</div>
-  )
+    return (
+        <div>
+            <Cards />
+        </div>
+    );
 }
 
-export default test
+export default test;

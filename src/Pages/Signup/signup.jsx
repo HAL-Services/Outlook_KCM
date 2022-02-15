@@ -5,56 +5,50 @@ export default function Signup() {
   return (
     <>
       <img
-        className="topRightImg"
+        className="SignuptopRightImg"
         style={{ display: "none" }}
         src={topRightImg}
         alt="topRightImg"
       />
-      <div className="container">
-        <div className="left">
+      <div className="Signupcontainer">
+        <div className="Signupleft">
           <img className="SignUpImg" src={SignUpImg} alt="" />
         </div>
-        <div className="right">
-          <div className="heading">Add Details</div>
-          <div className="main">
-            <form className="registerform">
-              <div className="wrapper">
+        <div className="Signupright">
+          <div className="Signupheading">Add Details</div>
+          <div className="Signupmain">
+            <form className="Signupregisterform">
+              <div className="signUpwrapper">
                 <label>Name</label>
                 <input
-                  className="registerInput"
+                  className="SignupregisterInput"
                   type="text"
-                  placeholder="username"
+                  placeholder="Full Name"
                 ></input>
               </div>
-              <div className="wrapper">
-                <label>Password</label>
-                <input
-                  className="registerInput"
-                  type="password"
-                  placeholder="password"
-                ></input>
-              </div>
-              <div className="wrapper">
+              <div className="signUpwrapper">
                 <label>Mobile</label>
                 <input
-                  className="registerInput"
+                  className="SignupregisterInput"
                   type="text"
-                  placeholder="0123456789"
+                  placeholder="1234567890"
                 ></input>
               </div>
-              <div className="wrapper">
+              <div className="signUpwrapper">
                 <label>Email</label>
                 <input
-                  className="registerInput"
+                  className="SignupregisterInput"
                   type="email"
                   placeholder="abc@.com"
                 ></input>
               </div>
-              <p className="termsAndCondition">
+              <p className="SignuptermsAndCondition">
                 Creating an account means you're okay with our Terms of Service
                 and our Privacy Policy
               </p>
-              <button className="registerButton" type="submit">Continue</button>
+              <button className="SignupregisterButton" type="submit">
+                <span>Continue</span>
+              </button>
             </form>
           </div>
         </div>

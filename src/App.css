@@ -2,3 +2,8 @@
   box-sizing: border-box;
   margin: 0;
 }
+
+.mainHeader {
+  margin-bottom: 5.2rem;
+  height: auto;
+}
