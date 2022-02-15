@@ -5,6 +5,9 @@
   height: 400px;
   background-color: #2a2726;
   color: white;
+  margin-bottom: 0;
+  margin-top: 10px;
+  
 }
 .FooterLogo {
   display: flex;
@@ -112,11 +115,11 @@
   }
   .FooterWrapper {
     justify-content: center;
-    height:auto;
-    margin-bottom:20px;
+    height: auto;
+    margin-bottom: 20px;
   }
-  .FooterInfoValue{
-      width:40%;
-      margin:0;
+  .FooterInfoValue {
+    width: 40%;
+    margin: 0;
   }
 }
