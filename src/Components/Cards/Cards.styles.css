@@ -1,61 +1,43 @@
-html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-h1 {
+.plan_head {
   color: black;
-  margin: 2rem 0 1rem 0;
+  font-size: 2rem;
 }
 
-.wrapper {
-  flex-direction: row;
-  justify-content: center;
-  margin: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
-  gap: 2rem;
+.card-heading h1 {
+  font-size: 3rem;
+  font-weight: 500;
 }
+
+.card-heading {
+  padding: 2rem;
+}
+
 .card {
-  overflow: hidden;
-  padding: 1rem;
-  border-radius: 0.75rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  transition: transform 200ms ease-in, box-shadow 200ms ease-in;
-}
-
-.card:hover {
-  transform: scale(1.01);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 16px -2px,
-    rgba(0, 0, 0, 0.3) 0px 6px 10px -3px;
-}
-
-.line {
-  background: #7e7e7e;
-  height: 0.1rem;
-  width: 100%;
-}
-
-.btn_icon {
-  padding: 0.75rem;
-  font-weight: bold;
-  font-size: 1rem;
-  margin: 1rem;
-  background: transparent;
-  border: 0.1rem solid #0b62fe;
-  color: black;
-  border-radius: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 16px -4px,
+    rgba(0, 0, 0, 0.3) 0px 6px 10px -6px;
   transition: 200ms;
 }
 
-.btn_icon:hover {
-  background: #0b62fe;
-  color: white;
-  cursor: pointer;
+.card:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 14px 20px -2px,
+    rgba(0, 0, 0, 0.3) 0px 9px 13px -3px;
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+@media screen and (max-width: 568px) {
+  .plan_head {
+    color: black;
+  }
+  .card-heading h1 {
+    font-weight: 500;
+  }
+  .card-heading {
+    padding: 0;
+  }
+  .card-body {
+    padding: 0;
+  }
 }

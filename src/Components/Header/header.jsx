@@ -1,7 +1,6 @@
 import "./header.styles.css";
 import logo from "../../Assets/logo.jpg";
-import { FaLocationArrow, FaPhoneAlt } from "react-icons/fa";
-import { GiScrewdriver } from "react-icons/gi";
+import { FaLocationArrow, FaPhoneAlt, FaWrench } from "react-icons/fa";
 import { useState } from "react";
 
 export default function Header() {
@@ -32,18 +31,26 @@ export default function Header() {
       <div className="Headerutilitis">
         <ul className="Headernav">
           <div className="Headerwrapper HeaderExtra">
-            <GiScrewdriver className="Headericons" />
+            <FaWrench
+              className={navbar ? "Headericons active" : "Headericons"}
+            />
             <li className="Headernav-items">Services</li>
           </div>
           <div className="Headerwrapper HeaderExtra">
-            <FaLocationArrow className="Headericons" />
+            <FaLocationArrow
+              className={navbar ? "Headericons active" : "Headericons"}
+            />
             <li className="Headernav-items">Get Direction</li>
           </div>
           <div className="Headerwrapper HeaderExtra">
-            <FaPhoneAlt className="Headericons" />
+            <FaPhoneAlt
+              className={navbar ? "Headericons active" : "Headericons"}
+            />
             <li className="Headernav-items">Call</li>
           </div>
-          <button className="btn_login">Login</button>
+          <button className={navbar ? "btn_login" : "btn_login active"}>
+            Login
+          </button>
         </ul>
       </div>
     </div>

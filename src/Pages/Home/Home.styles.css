@@ -2,9 +2,10 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  opacity: 90%;
   height: 100vh;
   object-fit: cover;
+  filter: brightness(50%);
+  background-color: black;
 }
 
 .home {
@@ -37,16 +38,32 @@
   flex-direction: row;
 }
 
-.coursel {
+.plans_all {
   display: flex;
-  flex-direction: column;
+  min-height: 100vh;
+  padding: 5rem 10rem;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  padding: 5rem 10rem;
 }
 
-.service {
-  min-height: 100vh;
-  padding: 5rem 10rem;
+@media only screen and (max-width: 1030px) {
+  .content_body h1 {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding-bottom: 2rem;
+    margin: 0;
+  }
+  .hidden {
+    display: none;
+  }
+  .plans_all {
+    min-height: 100vh;
+    padding: 5rem 10rem;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+  }
 }
