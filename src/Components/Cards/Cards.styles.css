@@ -1,60 +1,61 @@
 html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1 {
-    color: black;
-    margin: 2rem 0 1rem 0;
+  color: black;
+  margin: 2rem 0 1rem 0;
 }
 
 .wrapper {
-    justify-content: center;
-    margin: 2rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
-    gap: 2rem;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+  gap: 2rem;
 }
 .card {
-    overflow: hidden;
-    padding: 1rem;
-    border-radius: 0.75rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    transition: transform 200ms ease-in, box-shadow 200ms ease-in;
+  overflow: hidden;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: transform 200ms ease-in, box-shadow 200ms ease-in;
 }
 
 .card:hover {
-    transform: scale(1.01);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 16px -2px,
-        rgba(0, 0, 0, 0.3) 0px 6px 10px -3px;
+  transform: scale(1.01);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 16px -2px,
+    rgba(0, 0, 0, 0.3) 0px 6px 10px -3px;
 }
 
 .line {
-    background: #7e7e7e;
-    height: 0.1rem;
-    width: 100%;
+  background: #7e7e7e;
+  height: 0.1rem;
+  width: 100%;
 }
 
 .btn_icon {
-    padding: 0.75rem;
-    font-weight: bold;
-    font-size: 1rem;
-    margin: 1rem;
-    background: transparent;
-    border: 0.1rem solid #0b62fe;
-    color: black;
-    border-radius: 2rem;
-    transition: 200ms;
+  padding: 0.75rem;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 1rem;
+  background: transparent;
+  border: 0.1rem solid #0b62fe;
+  color: black;
+  border-radius: 2rem;
+  transition: 200ms;
 }
 
 .btn_icon:hover {
-    background: #0b62fe;
-    color: white;
-    cursor: pointer;
+  background: #0b62fe;
+  color: white;
+  cursor: pointer;
 }

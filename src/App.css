@@ -1,9 +1,10 @@
 * {
-  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-.mainHeader {
-  margin-bottom: 5.2rem;
-  height: auto;
+body {
+  overflow-x: hidden;
 }
