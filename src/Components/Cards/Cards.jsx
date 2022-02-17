@@ -9,7 +9,7 @@ export default function Cards() {
           <Card.Header className="card-heading">
             <h1>Basic</h1>
           </Card.Header>
-          <Card.Body className="d-grid gap-2">
+          <Card.Body className="d-grid gap-2 mb-2">
             <Card.Title className="plan_head">$9</Card.Title>
             <Card.Text>
               Some quick example text to build on the card title and make up the
