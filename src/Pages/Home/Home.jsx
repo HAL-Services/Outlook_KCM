@@ -1,4 +1,5 @@
 import Cards from "../../Components/Cards/Cards";
+import Carousels from "../../Components/Carousel/Carousel";
 import "./Home.styles.css";
 
 export default function Home() {
@@ -18,8 +19,31 @@ export default function Home() {
           <p>Car Repair And Maintenance in Gurugram</p>
         </div>
       </div>
+      <div className="phone_card">
+        <div className="phone_head">
+          <label htmlFor="PHONE">
+            <input type="text" name="" id="phone" placeholder="Phone Number" />
+            <div className="underline"></div>
+          </label>
+        </div>
+
+        <button className="btn_otp">SEND OTP</button>
+      </div>
       <div className="plans_all">
-        <Cards />
+        <div className="left_side">
+          <Cards />
+          <a href="services">Explore More</a>
+        </div>
+      </div>
+
+      <div className="testimonial">
+        <Carousels />
+        <div className="testimonial_right">
+          {/* <img
+            src="https://www.google.com/maps/place/KCM+AUTOMOBILES/data=!3m1!4b1!4m2!3m1!1s0x390d183000000021:0x8d473674bdf87c83"
+            alt="image"
+          />*/}
+        </div>
       </div>
     </>
   );

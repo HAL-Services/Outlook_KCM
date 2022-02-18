@@ -34,18 +34,89 @@
   z-index: 1;
 }
 
-.content.service {
-  flex-direction: row;
+.plans_all {
+  padding: 5rem 10rem;
+  min-height: 100vh;
 }
 
-.plans_all {
+.phone_card {
   display: flex;
-  min-height: 100vh;
-  padding: 5rem 10rem;
-  justify-content: center;
+  background-color: #ffff;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border: 0.5px solid #7e7e7e;
+  width: 50%;
+  height: 5%;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.phone_head {
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+.phone_head input {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.underline {
+  background: #7e7e7e;
+  width: 100%;
+  height: 2px;
+}
+
+.btn_otp {
+  padding: 0.2rem 1rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 1rem;
+  background: #0b62fe;
+  color: white;
+  border: 1px solid #0b62fe;
+  transition: 200ms;
+  border-radius: 1rem;
+  letter-spacing: 1.2px;
+  white-space: nowrap;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.btn_otp:hover {
+  background: transparent;
+  color: black;
+}
+
+.left_side {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
+.left_side a {
+  margin-top: 2rem;
+}
+
+.testimonial {
+  display: flex;
+  min-height: 100vh;
+  padding: 5rem 10rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testimonial_right {
+  border: 1px solid black;
+  margin: 5rem;
+  padding: 5rem;
+}
 @media only screen and (max-width: 1030px) {
   .content_body h1 {
     color: white;
@@ -58,12 +129,53 @@
     display: none;
   }
   .plans_all {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     min-height: 100vh;
-    padding: 5rem 10rem;
+    padding: 2rem 7rem;
   }
   .row {
     display: flex;
     flex-direction: row;
     justify-content: stretch;
+  }
+  .phone_card {
+    display: flex;
+    background-color: #ffff;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 3rem;
+    margin: 0;
+    border-radius: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+
+  .phone_head {
+    font-size: 1rem;
+    margin: 0rem;
+  }
+
+  .phone_head input {
+    width: 100%;
+    padding: 0 0;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+  }
+  .btn_otp {
+    padding: 0.2rem 1rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 2.5rem 1rem;
+    background: #0b62fe;
+    color: white;
+    border: 1px solid #0b62fe;
+    transition: 200ms;
+    border-radius: 1rem;
+    letter-spacing: 1.2px;
+    white-space: nowrap;
   }
 }

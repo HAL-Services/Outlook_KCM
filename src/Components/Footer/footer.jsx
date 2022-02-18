@@ -1,5 +1,6 @@
 import "./footer.styles.css";
 import Logo from "../../Assets/logo.jpg";
+
 import {
   FaTwitter,
   FaLinkedinIn,
@@ -16,7 +17,6 @@ export default function Footer() {
       <div className="FooterLogo">
         <div className="FooterImgContainer">
           <img className="FooterLogoImg" src={Logo} alt="logo" />
-          
         </div>
         <div className="FooterAddress">
           Plot no. 3 , opposite AG industries Sector 18 Gurugram, Haryana 122001

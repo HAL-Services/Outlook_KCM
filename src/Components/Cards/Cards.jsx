@@ -1,15 +1,15 @@
 import "./Cards.styles.css";
-import { Card, Button, Container, Row, Col } from "react-bootstrap";
+import { Card, Button, Row, Col } from "react-bootstrap";
 
 export default function Cards() {
   return (
     <Row>
-      <Col className="pricing" lg={4} md={6} sm={6}>
+      <Col className="pricing d-flex gap-2" lg={4} md={6} sm={6}>
         <Card style={{ width: "18rem" }} className="text-center pricing_col">
           <Card.Header className="card-heading">
             <h1>Basic</h1>
           </Card.Header>
-          <Card.Body className="d-grid gap-2 mb-2">
+          <Card.Body className="gap-2 mb-4 m-3 ">
             <Card.Title className="plan_head">$9</Card.Title>
             <Card.Text>
               Some quick example text to build on the card title and make up the
@@ -24,7 +24,7 @@ export default function Cards() {
           <Card.Header className="card-heading">
             <h1>Standard</h1>
           </Card.Header>
-          <Card.Body className="d-grid gap-2">
+          <Card.Body className="gap-2 mb-4 m-3">
             <Card.Title className="plan_head">$9</Card.Title>
             <Card.Text>
               Some quick example text to build on the card title and make up the
@@ -39,7 +39,7 @@ export default function Cards() {
           <Card.Header className="card-heading">
             <h1>Premium</h1>
           </Card.Header>
-          <Card.Body className="d-grid gap-2">
+          <Card.Body className="gap-2 mb-4 m-3">
             <Card.Title className="plan_head">$9</Card.Title>
             <Card.Text>
               Some quick example text to build on the card title and make up the
