@@ -19,11 +19,11 @@ export default function Header() {
 
   return (
     <div
-      className={navbar ? "HeadernavContainer active" : "HeadernavContainer"}
+      className="HeadernavContainer active"
     >
       <div className="Headerhero">
         <img
-          className={navbar ? "Headerlogo active" : "Headerlogo"}
+          className="Headerlogo active"
           alt="Logo.png"
           src={logo}
         />

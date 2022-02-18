@@ -1,0 +1,8 @@
+.cardBody{
+    width:100%;
+}
+.selectionCardContainer{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}

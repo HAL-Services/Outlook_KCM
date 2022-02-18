@@ -1,45 +1,24 @@
 import "./Cards.styles.css";
-import { CgBorderStyleSolid } from "react-icons/cg";
+import { Card, Button, Container, Row, Col } from "react-bootstrap";
 
 export default function Cards() {
-    return (
-        <div className="wrapper">
-            <div className="card">
-                <div className="card-body">
-                    <h1>BASIC PLAN</h1>
-                    <CgBorderStyleSolid className="line" />
-                    <h2>$9.9</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Deleniti, quaerat.
-                    </p>
-                </div>
-                <button className="btn_icon">MORE</button>
-            </div>
-            <div className="card">
-                <div className="card-body">
-                    <h1>BASIC PLAN</h1>
-                    <CgBorderStyleSolid className="line" />
-                    <h2>$9.9</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Deleniti, quaerat.
-                    </p>
-                </div>
-                <button className="btn_icon">MORE</button>
-            </div>
-            <div className="card">
-                <div className="card-body">
-                    <h1>BASIC PLAN</h1>
-                    <CgBorderStyleSolid className="line" />
-                    <h2>$9.9</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Deleniti, quaerat.
-                    </p>
-                </div>
-                <button className="btn_icon">MORE</button>
-            </div>
-        </div>
-    );
+  return (
+    <Row>
+      <Col className="pricing" lg={4} md={6} sm={6}>
+        <Card style={{ width: "18rem" }} className="text-center pricing_col">
+          <Card.Header className="card-heading">
+            <h1>Basic</h1>
+          </Card.Header>
+          <Card.Body className="d-grid gap-2">
+            <Card.Title className="plan_head">$9</Card.Title>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
+          </Card.Body>
+        </Card>
+      </Col>
+    </Row>
+  );
 }
