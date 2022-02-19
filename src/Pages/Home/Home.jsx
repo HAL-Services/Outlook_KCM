@@ -1,10 +1,14 @@
-import Cards from "../../Components/Cards/Cards";
 import Carousels from "../../Components/Carousel/Carousel";
+import ServiceCard from "../../Components/Service Card/ServiceCard";
+import PhoneOtp from "../../Components/PhoneOtp/PhoneOtp";
+import Header from "../../Components/Header/header";
+import Footer from "../../Components/Footer/footer";
 import "./Home.styles.css";
 
 export default function Home() {
   return (
     <>
+      <Header />
       <div className="home">
         <img
           className="home_img"
@@ -14,37 +18,29 @@ export default function Home() {
         <div className="content_body">
           <h1>
             KCM AUTOMOBILES
+            <br />
             <span className="hidden">(The German Car Experts)</span>{" "}
           </h1>
           <p>Car Repair And Maintenance in Gurugram</p>
         </div>
       </div>
-      <div className="phone_card">
-        <div className="phone_head">
-          <label htmlFor="PHONE">
-            <input type="text" name="" id="phone" placeholder="Phone Number" />
-            <div className="underline"></div>
-          </label>
-        </div>
 
-        <button className="btn_otp">SEND OTP</button>
-      </div>
-      <div className="plans_all">
-        <div className="left_side">
-          <Cards />
-          <a href="services">Explore More</a>
+      <div className="service_section">
+        <div className="service_all_cards">
+          <ServiceCard title="Basic" />
+          <span className="hidden">
+            <ServiceCard title="Standard" />
+          </span>
+        </div>
+        <div className="service_link">
+          <a href="service">Explore More</a>
         </div>
       </div>
-
-      <div className="testimonial">
-        <Carousels />
-        <div className="testimonial_right">
-          {/* <img
-            src="https://www.google.com/maps/place/KCM+AUTOMOBILES/data=!3m1!4b1!4m2!3m1!1s0x390d183000000021:0x8d473674bdf87c83"
-            alt="image"
-          />*/}
-        </div>
+      <Carousels />
+      <div className="phone_section">
+        <PhoneOtp title="Quick Service" />
       </div>
+      <Footer />
     </>
   );
 }
