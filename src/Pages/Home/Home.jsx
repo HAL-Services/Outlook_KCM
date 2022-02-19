@@ -37,7 +37,7 @@ export default function Home() {
         </div>
       </div>
       <Carousels />
-      <div className="phone_section">
+      <div className="phone_section hidden">
         <PhoneOtp title="Quick Service" />
       </div>
       <Footer />
