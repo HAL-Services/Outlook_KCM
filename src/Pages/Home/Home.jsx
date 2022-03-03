@@ -3,6 +3,8 @@ import ServiceCard from "../../Components/Service Card/ServiceCard";
 import PhoneOtp from "../../Components/PhoneOtp/PhoneOtp";
 import Header from "../../Components/Header/header";
 import Footer from "../../Components/Footer/footer";
+import { FaAngleRight } from "react-icons/fa";
+import GoogleMap from "../../Assets/GoogleMap.png";
 import "./Home.styles.css";
 
 export default function Home() {
@@ -26,17 +28,40 @@ export default function Home() {
       </div>
 
       <div className="service_section">
+        <div className="service_steps">
+          <h1>Steps to Book your Service</h1>
+          <ul>
+            <li>
+              <FaAngleRight />
+              Choose your car
+            </li>
+            <li>
+              <FaAngleRight />
+              Choose your Plan
+            </li>
+            <li>
+              <FaAngleRight />
+              Book your Service
+            </li>
+          </ul>
+        </div>
         <div className="service_all_cards">
           <ServiceCard title="Basic" />
           <span className="hidden">
             <ServiceCard title="Standard" />
           </span>
         </div>
-        <div className="service_link">
-          <a href="service">Explore More</a>
-        </div>
+        <a classname="service_link" id="service_link" href="service">
+          Explore More
+        </a>
       </div>
-      <Carousels />
+      <div className="testimonial_section">
+        <Carousels />
+        <a href="https://www.google.com/maps/place/KCM+AUTOMOBILES/data=!3m1!4b1!4m2!3m1!1s0x390d183000000021:0x8d473674bdf87c83">
+          <img className="map_img" src={GoogleMap} alt="google map" />
+        </a>
+      </div>
+
       <div className="phone_section hidden">
         <PhoneOtp title="Quick Service" />
       </div>

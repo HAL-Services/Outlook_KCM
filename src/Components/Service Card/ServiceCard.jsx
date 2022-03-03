@@ -3,7 +3,7 @@ import { Card, Button } from "react-bootstrap";
 
 export default function ServiceCard({ title }) {
   return (
-    <Card className="text-center m-5 service_card" style={{ width: "18rem" }}>
+    <Card className="text-center m-4 service_card" style={{ width: "18rem" }}>
       <Card.Header>
         <h1>{title}</h1>
       </Card.Header>
