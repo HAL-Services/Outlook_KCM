@@ -28,7 +28,7 @@ export default function Home() {
       </div>
 
       <div className="service_section">
-        <div className="service_steps">
+        {/* <div className="service_steps">
           <h1>Steps to Book your Service</h1>
           <ul>
             <li>
@@ -44,7 +44,7 @@ export default function Home() {
               Book your Service
             </li>
           </ul>
-        </div>
+        </div> */}
         <div className="service_all_cards">
           <ServiceCard title="Basic" />
           <span className="hidden">
