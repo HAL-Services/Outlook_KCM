@@ -1,14 +1,11 @@
-import Signup from "./Pages/Signup/signup";
-import Header from "./Components/Header/header";
-import Footer from "./Components/Footer/footer";
 import "./App.css";
-export default function () {
-  const user = false;
+import "./Pages/Home/Home";
+import Home from "./Pages/Home/Home";
+
+export default function App() {
   return (
-    <div>
-     <Header/> 
-     <Signup/>
-     <Footer/>
+    <div className="App">
+      <Home />
     </div>
   );
 }

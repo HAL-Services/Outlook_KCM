@@ -1,0 +1,108 @@
+.home_img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(50%);
+
+  background-color: black;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 5rem 10rem;
+}
+
+.content_body h1 {
+  color: white;
+  font-size: 2.8rem;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  padding-bottom: 2rem;
+  margin: 0;
+}
+
+.content_body {
+  color: white;
+  text-align: center;
+  padding-bottom: 10rem;
+  z-index: 1;
+}
+
+.service_section {
+  min-height: 100vh;
+  padding: 5rem 10rem;
+}
+
+.service_all_cards {
+  display: flex;
+  align-items: center;
+}
+
+/* a {
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 24%;
+} */
+
+#service_link {
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 24%;
+}
+
+.phone_section {
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+  width: auto;
+  display: inline-block;
+  left: 77%;
+  bottom: 3rem;
+}
+
+.service_steps {
+  display: flex;
+  flex-direction: column;
+}
+
+.service_steps ul {
+  text-emphasis: none;
+  list-style-type: none;
+  font-size: 1.3rem;
+  line-height: 3rem;
+}
+
+.testimonial_section {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 5rem 10rem;
+}
+
+.map_img {
+  object-fit: contain;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+@media only screen and (max-width: 1030px) {
+  .content_body h1 {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding-bottom: 2rem;
+    margin: 0;
+  }
+  .hidden {
+    display: none;
+  }
+  .phone_section {
+    position: relative;
+  }
+}
